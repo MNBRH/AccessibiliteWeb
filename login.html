@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessibilité Web">
+  <title>Page de Connexion</title>
+  <link rel="shortcut icon" href="assets/blog.png" type="icon-site">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="haut-de-page">
+    <img src="assets/logoB.jpg" alt="Logo de l'application" aria-label="Logo-haut-de-page" class="LogoBlog" />
+  </div>
+
+  <div class="container" require aria-label="Page de connexion">
+
+    <main class="Formulaire" id="Formulaire" aria-label="Formulaire de connexion">
+
+      <img src="assets/blog.png" alt="Logo de l'application" class="logo" aria-label="Logo de l'application">
+      <h1>Connectez-vous pour accéder à votre compte.</h1>
+      <form id="loginForm" name="Formulaire de connexion" required aria-label="Formulaire de connexion"
+        onsubmit="redirectToHome(event)">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required aria-label="Adresse Email" placeholder="Email...">
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required aria-label="Mot de passe"
+          placeholder="Mot de passe...">
+
+
+        <button type="submit">Se Connecter </button>
+      </form>
+    </main>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+<footer class="footer" aria-label="Pied de page">
+  <p>© 2024 - Tous droits réservés - B'Blog</p>
+</footer>
+
+</html>
