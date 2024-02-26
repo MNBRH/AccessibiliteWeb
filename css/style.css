@@ -12,15 +12,19 @@ a{
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
+  height:   100vh;
 }
 
 .container {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgb(255, 254, 254);
+  margin: 0 auto; 
+  max-width: 650px;
 }
+
 
 .logo {
   width: 80px;
@@ -65,12 +69,21 @@ button:hover {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  width: 100%;
   text-align: center;
-  padding: 10px;
   background-color: #ffffff;
   border-top: 1px solid #ccc;
-  width: 100%;
+  max-width: 650px; 
+  margin: 0 auto;
+  padding: 10px;
 }
+
+
+
 
 .footer-text {
   color: #333;
