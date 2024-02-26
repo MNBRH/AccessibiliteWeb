@@ -1,0 +1,44 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "img": "/assets/StephCurry.jpg",
+      "titre": "Les moments légendaires de la NBA",
+      "preview": "Revivez les moments les plus mémorables de l'histoire de la NBA, des dunks impressionnants aux victoires historiques...",
+      "nombreDeCommentaires": 18,
+      "motCle": "Basket"
+    },
+    {
+      "id": 2,
+      "img": "/assets/Nadal.jpg",
+      "titre": "Les grands chelems: Analyse des victoires de tennis",
+      "preview": "Découvrez une analyse détaillée des derniers tournois du Grand Chelem et des performances marquantes des joueurs...",
+      "nombreDeCommentaires": 21,
+      "motCle": "Tennis"
+    },
+    {
+      "id": 3,
+      "img": "/assets/dbs.jpg",
+      "titre": "Dragon Ball Z: Kakarot - Un jeu à ne pas manquer",
+      "preview": "Plongez dans l'univers de Dragon Ball Z avec le jeu Kakarot. Découvrez nos astuces et conseils pour avancer dans le jeu...",
+      "nombreDeCommentaires": 34,
+      "motCle": "Jeux Vidéo"
+    },
+    {
+      "id": 4,
+      "img": "/assets/VCT2024.png",
+      "titre": "VCT 2024: Prédictions et équipes à suivre",
+      "preview": "Avec le VCT 2024 approchant, découvrez nos prédictions pour le tournoi et les équipes qui promettent de faire sensation...",
+      "nombreDeCommentaires": 27,
+      "motCle": "Esports"
+    },
+    {
+      "id": 5,
+      "img": "/assets/messi.jpg",
+      "titre": "Goat du Football ?",
+      "preview": "Lionel Messi est-il le meilleur joueur de football de tous les temps ? Découvrez notre analyse et nos arguments...",
+      "nombreDeCommentaires": 53,
+      "motCle": "Football"
+    }
+  ]
+}

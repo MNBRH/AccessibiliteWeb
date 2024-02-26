@@ -1,12 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  color: #000000;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
 .container {
@@ -60,9 +65,6 @@ button:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   padding: 10px;
   background-color: #ffffff;
@@ -75,15 +77,12 @@ footer {
 }
 
 .haut-de-page {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  right: 10px; /* Utilise right pour étendre sur toute la largeur */
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Pour espacer les éléments */
-  background-color: #ffffff; /* Ajoute une couleur de fond */
-  padding: 10px; /* Ajoute un peu de marge intérieure */
+  justify-content: space-between;
+  padding: 2em;
+  position: sticky;
+  top: 0;
 }
 
 .LogoBlog {
@@ -138,6 +137,7 @@ footer {
   height: 150px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
+  display: flex;
 }
 
 .article-image img:hover {
