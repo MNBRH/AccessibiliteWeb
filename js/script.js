@@ -15,39 +15,52 @@ async function displayArticles() {
   articles.forEach((article) => {
     const articleElement = document.createElement("article");
     articleElement.classList.add("article");
-
-    const linkElement = document.createElement("a");
-    linkElement.href = `article.html?id=${article.id}`;
-    linkElement.setAttribute(
+    articleElement.href = `article.html?id=${article.id}`;
+    articleElement.setAttribute(
       "aria-label",
-      `Lire plus sur le thème : ${article.motCle}`
+      `Lire l'article sur le thème : ${article.motCle}`
     );
 
-    linkElement.innerHTML = `
-    <div class="article-content">
-      <h3>${article.titre}</h3>
-      <div class="article-content">
-        <div class="article-text">
-          <p>${article.preview}</p>
-        </div>
-        <div class="article-image">
-          <img src="${article.img}" alt="${article.titre}" />
-        </div>
-      </div>
-    </div>
-  `;
+    const contentDiv = document.createElement("div");
 
-    const commentsLinkElement = document.createElement("a");
-    commentsLinkElement.href = `article.html?id=${article.id}#commentaires`;
-    commentsLinkElement.textContent = `${article.nombreDeCommentaires} commentaires`;
-    commentsLinkElement.setAttribute(
+    const titleElement = document.createElement("h3");
+    titleElement.textContent = article.titre;
+
+    const articleContent = document.createElement("div");
+    articleContent.classList.add("article-content");
+
+    const previewDiv = document.createElement("div");
+    previewDiv.classList.add("article-text");
+
+    const previewParagraph = document.createElement("p");
+    previewParagraph.textContent = article.preview;
+
+    const imageDiv = document.createElement("div");
+    imageDiv.classList.add("article-image");
+
+    const imgElement = document.createElement("img");
+    imgElement.src = article.img;
+    imgElement.alt = article.titre;
+
+    const commentsLink = document.createElement("a");
+    commentsLink.href = `article.html?id=${article.id}#commentaires`;
+    commentsLink.textContent = `${article.nombreDeCommentaires} commentaires`;
+    commentsLink.setAttribute(
       "aria-label",
-      `${article.nombreDeCommentaires} commentaires sur le thème : ${article.motCle}`
+      `Voir les ${article.nombreDeCommentaires} commentaires sur l'article : ${article.titre}`
     );
 
-    articleElement.appendChild(linkElement);
-    articleElement.appendChild(commentsLinkElement);
+    imageDiv.appendChild(imgElement);
+    previewDiv.appendChild(previewParagraph);
 
+    articleContent.appendChild(previewDiv);
+    articleContent.appendChild(imageDiv);
+
+    contentDiv.appendChild(titleElement);
+    contentDiv.appendChild(articleContent);
+    contentDiv.appendChild(commentsLink);
+
+    articleElement.appendChild(contentDiv);
     articlesContainer.appendChild(articleElement);
   });
 }
