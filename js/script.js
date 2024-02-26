@@ -1,7 +1,3 @@
-function redirectToHome(event) {
-  event.preventDefault();
-  window.location.href = "accueil.html";
-}
 
 async function fetchArticles() {
   const response = await fetch("../assets/articles.json");
