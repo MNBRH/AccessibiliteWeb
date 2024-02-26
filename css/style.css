@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -12,19 +12,18 @@ a{
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  height:   100vh;
+  height: 100vh;
 }
 
 .container {
-    text-align: center;
-    padding: -76px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(255, 254, 254);
-    margin: 0 auto;
-    max-width: 689px
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 254, 254);
+  margin: 0 auto;
+  max-width: 500px;
 }
-
 
 .logo {
   width: 80px;
@@ -44,9 +43,9 @@ label {
 }
 
 input {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   background-color: #f0f0f0;
   color: #333;
@@ -62,6 +61,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   forced-color-adjust: auto;
+  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -72,18 +72,15 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0; 
+  right: 0;
   width: 100%;
   text-align: center;
   background-color: #ffffff;
   border-top: 1px solid #ccc;
-  max-width: 650px; 
+  max-width: 650px;
   margin: 0 auto;
   padding: 10px;
 }
-
-
-
 
 .footer-text {
   color: #333;
@@ -116,13 +113,12 @@ footer {
 }
 
 .article {
-  margin-bottom: 20px; 
-  border: 1px solid #ccc; 
-  border-radius: 10px; 
-  padding: 20px; 
-  background-color: #f9f9f9; 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
-
 
 .article h3 {
   color: #333;
@@ -157,7 +153,6 @@ footer {
   transform: scale(1.1);
 }
 
-
 .commentaires {
   text-align: left;
   margin-top: 20px;
@@ -180,4 +175,3 @@ footer {
 .article-links a:hover {
   background-color: #696868;
 }
-
