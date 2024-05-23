@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Accessibilité Web">
-  <title>Page de Connexion</title>
-  <link rel="shortcut icon" href="assets/blog.png" type="icon-site">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <div class="haut-de-page">
-    <img src="assets/logoB.jpg" alt="Logo de l'application" aria-label="Logo-haut-de-page" class="LogoBlog" />
-  </div>
-
-  <div class="container" require aria-label="Page de connexion">
-
-    <main class="Formulaire" id="Formulaire" aria-label="Formulaire de connexion">
-
-      <img src="assets/blog.png" alt="Logo de l'application" class="logo" aria-label="Logo de l'application">
-      <h1>Connectez-vous pour accéder à votre compte.</h1>
-      <form id="loginForm" name="Formulaire de connexion" required aria-label="Formulaire de connexion">
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required aria-label="Adresse Email" placeholder="Email...">
-
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password" required aria-label="Mot de passe"
-          placeholder="Mot de passe...">
-
-
-         <button class="login-button"> <a href="./pages/accueil.html"> Se Connecter </button>
-        </form>
-      </main>
-  </div>
-
-
-  <script src="js/script.js"></script>
-
-  
-  <footer class="footer" aria-label="Pied de page">
-    <p>© 2024 - Tous droits réservés - B'Blog</p>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Accueil</title>
+  </head>
+  <body>
+    <header class="haut-de-page">
+      <a href="/" aria-label="Page d'accueil" aria-current="true">
+        <img src="/assets/logoB.jpg" alt="Logo de B'blog" aria-hidden="true" />
+        B'blog
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li>
+            <a href="./pages/connexion.html"> Connexion </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
+      <article>
+        <a href="./pages/article.html">
+          <h1>Les moments légendaires de la NBA</h1>
+        </a>
+        <div class="content">
+          <p>
+            Revivez les moments les plus mémorables de l'histoire de la NBA, des
+            dunks impressionnants aux victoires historiques...
+          </p>
+          <figure>
+            <img
+              src="./assets/StephCurry.jpg"
+              alt="Stephen Curry jouant au basket"
+            />
+            <figcaption>
+              Stephen Curry réalisant un dunk spectaculaire
+            </figcaption>
+          </figure>
+        </div>
+        <span aria-label="3 commentaires">3 commentaires</span>
+      </article>
+      <article>
+        <a href="./pages/article.html">
+          <h1>Les grands chelems: Analyse des victoires de tennis</h1>
+        </a>
+        <div class="content">
+          <p>
+            Découvrez une analyse détaillée des derniers tournois du Grand
+            Chelem et des performances marquantes des joueurs...
+          </p>
+          <figure>
+            <img src="./assets/Nadal.jpg" alt="Rafael Nadal jouant au tennis" />
+            <figcaption>
+              Rafael Nadal célébrant sa victoire au Grand Chelem
+            </figcaption>
+          </figure>
+        </div>
+        <span aria-label="2 commentaires">2 commentaires</span>
+      </article>
+    </main>
+    <footer class="pied-de-page">
+      <nav aria-label="Navigation de pied de page">
+        <ul>
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/">Politique de confidentialité</a>
+          </li>
+          <li>
+            <a href="/">Conditions générales d'utilisation</a>
+          </li>
+        </ul>
+      </nav>
+      <p>© 2024 - Tous droits réservés - B'Blog</p>
+    </footer>
+  </body>
 </html>

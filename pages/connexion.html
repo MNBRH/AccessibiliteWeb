@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="haut-de-page">
+      <a href="../index.html" aria-label="Page d'accueil">
+        <img src="../assets/logoB.jpg" alt="Logo de B'blog" />
+        B'blog
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li>
+            <a href="../pages/connexion.html">
+              <button aria-label="Connexion">Connexion</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero-connexion">
+      <img
+        src="../assets/blog.png"
+        alt="Image représentant le logo de B'blog"
+      />
+      <h1>Connectez-vous pour accéder à votre compte</h1>
+      <form action="/" method="get">
+        <div>
+          <label for="identifiant">Identifiant</label>
+          <input
+            id="identifiant"
+            type="email"
+            name="identifiant"
+            required
+          />
+        </div>
+        <div>
+          <label for="mot-de-passe">Mot de passe</label>
+          <input
+            id="mot-de-passe"
+            type="password"
+            name="mot-de-passe"
+            required
+          />
+        </div>
+        <div>
+          <button>Se connecter</button>
+        </div>
+      </form>
+    </main>
+    <footer class="pied-de-page">
+      <nav aria-label="Navigation de pied de page">
+        <ul>
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/">Politique de confidentialité</a>
+          </li>
+          <li>
+            <a href="/">Conditions générales d'utilisation</a>
+          </li>
+        </ul>
+      </nav>
+      <p>© 2024 - Tous droits réservés - B'Blog</p>
+    </footer>
+  </body>
+</html>

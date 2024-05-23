@@ -2,33 +2,82 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="
-      width=device-width,
-      initial-scale=1.0"
-    />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <title>Article</title>
   </head>
   <body>
-    <div class="haut-de-page">
-      <a href="./accueil.html">
-        <img
-          src="../assets/logoB.jpg"
-          alt="Logo de l'application"
-          aria-label="Logo-haut-de-page"
-          class="LogoBlog"
-        />
+    <header class="haut-de-page">
+      <a href="/" aria-label="Page d'accueil">
+        <img src="../assets/logoB.jpg" alt="Logo de B'blog" />
+        B'blog
       </a>
-      <div class="login-container">
-        <a href="../index.html" class="login-button">Login</a>
-      </div>
-    </div>
-    <div class="container"></div>
-    <footer class="footer" aria-label="Pied de page">
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li>
+            <a href="./connexion.html">Connexion </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero-article">
+      <article>
+        <h1>Les moments légendaires de la NBA</h1>
+        <p>
+          Revivez les moments les plus mémorables de l'histoire de la NBA, des
+          dunks impressionnants aux victoires historiques...
+        </p>
+        <h2>Moments Clés</h2>
+        <table>
+          <caption>
+            Moments légendaires de la NBA
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Année</th>
+              <th scope="col">Équipe</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2019</td>
+              <td>Raptors de Toronto</td>
+              <td>
+                Buzzer beater de Kawhi Leonard lors du game 6 des finales de
+                conférence pour amener son équipe en finale NBA
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <aside>
+        <h2>Commentaires</h2>
+        <ul>
+          <li>
+            <p>John Doe a commenté le 12/12/2023</p>
+          </li>
+          <li>
+            <p>"Super article, j'ai hâte de lire la suite !"</p>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="pied-de-page">
+      <nav aria-label="Navigation de pied de page">
+        <ul>
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/">Politique de confidentialité</a>
+          </li>
+          <li>
+            <a href="/">Conditions générales d'utilisation</a>
+          </li>
+        </ul>
+      </nav>
       <p>© 2024 - Tous droits réservés - B'Blog</p>
     </footer>
   </body>
-  <script type="module" src="../js/displayArticle.js"></script>
 </html>
