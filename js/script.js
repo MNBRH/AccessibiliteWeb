@@ -1,9 +1,4 @@
-
-async function fetchArticles() {
-  const response = await fetch("../assets/articles.json");
-  const articles = await response.json();
-  return articles.articles;
-}
+import fetchArticles from "./fetchArticles.js";
 
 async function displayArticles() {
   const articles = await fetchArticles();
@@ -58,6 +53,10 @@ async function displayArticles() {
 
     articleElement.appendChild(contentDiv);
     articlesContainer.appendChild(articleElement);
+
+    articleElement.onclick = () => {
+      location.href = `article.html?id=${article.id}`;
+    };
   });
 }
 
